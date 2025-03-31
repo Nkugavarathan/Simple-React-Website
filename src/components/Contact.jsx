@@ -5,33 +5,31 @@ import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import contactImage from "../../public/assets/images/contact.jpg" // Correct Import
 import { gsap } from "gsap" // GSAP for animations
-import ScrollTrigger from "gsap/ScrollTrigger" // ScrollTrigger plugin
-
-// Register ScrollTrigger with GSAP
-gsap.registerPlugin(ScrollTrigger)
+import { motion } from "framer-motion" // For motion animations
 
 export default function Contact() {
   const [validated, setValidated] = useState(false) // Form validation state
 
-  // GSAP Scroll animation for contact section
+  // GSAP Scroll animation for image section (Image Section comes from left)
   React.useEffect(() => {
     gsap.fromTo(
-      ".contact-section",
-      { opacity: 0, y: 100 },
+      ".contact-image",
+      { opacity: 0, x: -200 }, // Start from left
       {
         opacity: 1,
-        y: 0,
+        x: 0, // End at normal position
         duration: 1.5,
         ease: "power4.out",
-        scrollTrigger: {
-          trigger: ".contact-section",
-          start: "top bottom",
-          end: "top center",
-          scrub: true,
-        },
       }
     )
   }, [])
+
+  // Framer Motion animation for form section (Form Section comes from right)
+  const formMotion = {
+    initial: { x: 200, opacity: 0 }, // Start from right
+    animate: { x: 0, opacity: 1 }, // End at normal position
+    transition: { duration: 1.5 }, // Smooth transition
+  }
 
   const handleSubmit = (event) => {
     const form = event.currentTarget
@@ -50,11 +48,12 @@ export default function Contact() {
       <Navbar />
       <div className="container contact-section">
         <div className="row">
-          <h2 className="text-center text-primary  mb-4">Contact Us</h2>
+          <h2 className="text-center text-primary mb-4">Contact Us</h2>
         </div>
 
         <div className="row mt-5">
-          <div className="col-md-6">
+          {/* Image Section (GSAP animation - Image comes from the left) */}
+          <div className="col-md-6 contact-image">
             <img
               src={contactImage}
               alt="contactimage"
@@ -69,7 +68,13 @@ export default function Contact() {
             />
           </div>
 
-          <div className="col-md-6 col-sm-12">
+          {/* Form Section (Framer Motion - Form comes from the right) */}
+          <motion.div
+            className="col-md-6 col-sm-12"
+            initial={formMotion.initial}
+            animate={formMotion.animate}
+            transition={formMotion.transition}
+          >
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
               <Form.Group className="mb-3" controlId="formBasicName">
                 <Form.Label>Name</Form.Label>
@@ -102,7 +107,7 @@ export default function Contact() {
                 Submit
               </Button>
             </Form>
-          </div>
+          </motion.div>
         </div>
       </div>
 
