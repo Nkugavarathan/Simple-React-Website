@@ -47,6 +47,102 @@
         "src": "/assets/images/vegsupreme.jpg",
         "title": "Veg Supreme",
         "description": "A supreme veggie feast with olives, capsicum, mushrooms, and onions."
+      },
+      {
+        "id": "1",
+        "src": "/assets/images/cheeselover.jpg",
+        "title": "Cheese Lover",
+        "description": "A delightful pizza loaded with extra cheese for all cheese lovers."
+      },
+      {
+        "id": "2",
+        "src": "/assets/images/cheesy.jpg",
+        "title": "Cheesy",
+        "description": "A classic cheesy pizza with a perfect blend of mozzarella and cheddar."
+      },
+      {
+        "id": "3",
+        "src": "/assets/images/cheesytomato.jpg",
+        "title": "Cheesy Tomato",
+        "description": "A delicious combination of melted cheese and fresh tomato slices."
+      },
+      {
+        "id": "4",
+        "src": "/assets/images/panner.jpg",
+        "title": "Paneer Pizza",
+        "description": "A rich and flavorful pizza topped with spicy marinated paneer cubes."
+      },
+      {
+        "id": "5",
+        "src": "/assets/images/sausagedelight.jpg",
+        "title": "Sausage Delight",
+        "description": "A meaty treat with juicy sausage slices and a smoky BBQ sauce."
+      },
+      {
+        "id": "6",
+        "src": "/assets/images/spicyvegpanner.jpg",
+        "title": "Spicy Veg Paneer",
+        "description": "A fiery combination of spicy paneer, capsicum, and chili flakes."
+      },
+      {
+        "id": "7",
+        "src": "/assets/images/veglast.jpg",
+        "title": "Veg Masala",
+        "description": "A flavorful veggie pizza with a unique blend of Indian spices."
+      },
+      {
+        "id": "8",
+        "src": "/assets/images/vegsupreme.jpg",
+        "title": "Veg Supreme",
+        "description": "A supreme veggie feast with olives, capsicum, mushrooms, and onions."
+      },
+      {
+        "id": "1",
+        "src": "/assets/images/cheeselover.jpg",
+        "title": "Cheese Lover",
+        "description": "A delightful pizza loaded with extra cheese for all cheese lovers."
+      },
+      {
+        "id": "2",
+        "src": "/assets/images/cheesy.jpg",
+        "title": "Cheesy",
+        "description": "A classic cheesy pizza with a perfect blend of mozzarella and cheddar."
+      },
+      {
+        "id": "3",
+        "src": "/assets/images/cheesytomato.jpg",
+        "title": "Cheesy Tomato",
+        "description": "A delicious combination of melted cheese and fresh tomato slices."
+      },
+      {
+        "id": "4",
+        "src": "/assets/images/panner.jpg",
+        "title": "Paneer Pizza",
+        "description": "A rich and flavorful pizza topped with spicy marinated paneer cubes."
+      },
+      {
+        "id": "5",
+        "src": "/assets/images/sausagedelight.jpg",
+        "title": "Sausage Delight",
+        "description": "A meaty treat with juicy sausage slices and a smoky BBQ sauce."
+      },
+      {
+        "id": "6",
+        "src": "/assets/images/spicyvegpanner.jpg",
+        "title": "Spicy Veg Paneer",
+        "description": "A fiery combination of spicy paneer, capsicum, and chili flakes."
+      },
+      {
+        "id": "7",
+        "src": "/assets/images/veglast.jpg",
+        "title": "Veg Masala",
+        "description": "A flavorful veggie pizza with a unique blend of Indian spices."
+      },
+      {
+        "id": "8",
+        "src": "/assets/images/vegsupreme.jpg",
+        "title": "Veg Supreme",
+        "description": "A supreme veggie feast with olives, capsicum, mushrooms, and onions."
       }
     ]
   }
