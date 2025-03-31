@@ -1,13 +1,14 @@
 import React from "react"
 import Navbar from "./Navbar"
-
 import Footer from "./Footer"
 import homeImage from "../../public/assets/images/home.jpg"
 import { useNavigate } from "react-router-dom"
 import Typewriter from "typewriter-effect"
 import { motion } from "framer-motion"
+
 export default function Home() {
   const navigate = useNavigate()
+
   return (
     <>
       <Navbar />
@@ -15,12 +16,16 @@ export default function Home() {
         className="container-fluid p-0 d-flex align-items-center justify-content-center"
         style={{
           height: "100vh", // Full viewport height
-          // overflow: "hidden", // Prevent scrolling
         }}
       >
         <div className="row w-100 h-100 align-items-center p-4">
-          {/* Text Section */}
-          <div className="col-md-6 col-sm-12 text-center text-md-start">
+          {/* Text Section with Animation */}
+          <motion.div
+            className="col-md-6 col-sm-12 text-center text-md-start"
+            initial={{ x: -200, opacity: 0 }} // Start from left with opacity 0
+            animate={{ x: 0, opacity: 1 }} // End at normal position with full opacity
+            transition={{ duration: 1.5 }} // Duration for smooth animation
+          >
             <motion.h1
               className="text-center fw-bold display-3"
               style={{
@@ -28,9 +33,6 @@ export default function Home() {
                 WebkitBackgroundClip: "text",
                 color: "transparent",
               }}
-              initial={{ y: -100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 1 }}
             >
               <Typewriter
                 options={{
@@ -57,9 +59,15 @@ export default function Home() {
                 Order Now
               </button>
             </div>
-          </div>
-          {/* Image Section */}
-          <div className="col-md-6 col-sm-12 mt-4 mt-md-0 ">
+          </motion.div>
+
+          {/* Image Section with Animation */}
+          <motion.div
+            className="col-md-6 col-sm-12 mt-4 mt-md-0"
+            initial={{ x: 200, opacity: 0 }} // Start from right with opacity 0
+            animate={{ x: 0, opacity: 1 }} // End at normal position with full opacity
+            transition={{ duration: 1.5 }} // Duration for smooth animation
+          >
             <img
               src={homeImage}
               alt="Delicious pizza"
@@ -71,7 +79,7 @@ export default function Home() {
                 borderRadius: "10px", // Optional rounded corners
               }}
             />
-          </div>
+          </motion.div>
         </div>
       </div>
 
