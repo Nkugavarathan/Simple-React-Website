@@ -18,4 +18,6 @@ This is a **React** project bootstrapped with **Vite**. It includes various page
 
 ## 📸 Project Screenshot
 
-![Project Screenshot](./assets/images/homess.png)
+![Homepage Screenshot](./assets/screenshot/homess.png)
+![Orderpage Screenshot](./assets/screenshot/orderss.png)
+![Contactpage Screenshot](./assets/screenshot/contactss.png)
