@@ -60,7 +60,7 @@ export default function Home() {
 
           {/* Image Section with Animation */}
           <motion.div
-            className="col-md-6 col-sm-12 mt-4 mt-md-0"
+            className="col-md-6 col-sm-12 mt-4 mt-md-0 mb-5 mb-sm-5" // Ensure enough spacing
             initial={{ x: 200, opacity: 0 }} // Start from right with opacity 0
             animate={{ x: 0, opacity: 1 }} // End at normal position with full opacity
             transition={{ duration: 1.5 }} // Duration for smooth animation
@@ -68,12 +68,12 @@ export default function Home() {
             <img
               src={homeImage}
               alt="Delicious pizza"
-              className="img-fluid rounded-3 shadow-lg mb-4"
+              className="responsive-image  img-fluid rounded-3 shadow-lg"
               style={{
-                maxWidth: "100vw", // Ensures the image doesn't take full width
-                height: "80vh", // Reduce image height to fit without scrolling
-                objectFit: "cover", // Keeps the image clear
-                borderRadius: "10px", // Optional rounded corners
+                maxWidth: "100vw",
+                height: "80vh",
+                objectFit: "cover",
+                borderRadius: "10px",
               }}
             />
           </motion.div>

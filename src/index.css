@@ -1,0 +1,11 @@
+@media (max-width: 768px) {
+    .responsive-image {
+      height: 60vh !important; /* Reduce height on small screens */
+        margin-bottom: 220px;
+    }}
+
+    @media (max-width: 568px) {
+        .responsive-image {
+          height: 60vh !important; /* Reduce height on small screens */
+            margin-bottom: 120px;
+        }}
