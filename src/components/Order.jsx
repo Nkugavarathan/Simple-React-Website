@@ -15,13 +15,13 @@ export default function Order() {
           padding: "20px 0",
         }}
       >
-        <div className="row justify-content-center g-4 ">
+        <div className="row justify-content-center g-4">
           {data?.pizza?.map((item) => (
-            <div className="col-md-4 col-lg-3 col-sm-6 " key={item.id}>
+            <div className="col-md-4 col-lg-3 col-sm-6" key={item.id}>
               <div className="card" style={{ width: "100%" }}>
                 <img src={item.src} className="card-img-top" alt={item.title} />
-                <div className="card-body">
-                  <h5 className="card-title">{item.title}</h5>
+                <div className="card-body ">
+                  <h5 className="card-title text-center">{item.title}</h5>
                   <p className="card-text">{item.description}</p>
                   <button className="btn btn-primary">Add to Cart</button>
                 </div>
