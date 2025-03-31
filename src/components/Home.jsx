@@ -44,7 +44,7 @@ export default function Home() {
               className="img-fluid rounded-3 shadow-lg mb-4"
               style={{
                 maxWidth: "100vw", // Ensures the image doesn't take full width
-                height: "100vh", // Reduce image height to fit without scrolling
+                height: "80vh", // Reduce image height to fit without scrolling
                 objectFit: "cover", // Keeps the image clear
                 borderRadius: "10px", // Optional rounded corners
               }}
