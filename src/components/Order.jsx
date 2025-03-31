@@ -16,8 +16,8 @@ export default function Order() {
         }}
       >
         <div className="row justify-content-center g-4 ">
-          {data?.pizza?.map((item, index) => (
-            <div className="col-md-4 col-lg-3 col-sm-6 " key={index}>
+          {data?.pizza?.map((item) => (
+            <div className="col-md-4 col-lg-3 col-sm-6 " key={item.id}>
               <div className="card" style={{ width: "100%" }}>
                 <img src={item.src} className="card-img-top" alt={item.title} />
                 <div className="card-body">
