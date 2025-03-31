@@ -23,7 +23,7 @@ export default function Order() {
           opacity: 1, // End with full opacity
           duration: 1.5, // Animation duration (longer for smooth transition)
           ease: "power4.out", // Smooth ease effect
-          delay: index * 0.1, // Staggered delay for each card
+          delay: index * 0.2, // Staggered delay for each card
           scrollTrigger: {
             trigger: card, // Each card is the trigger
             start: "top bottom", // Start when the top of the card hits the bottom of the viewport
@@ -43,6 +43,7 @@ export default function Order() {
         start: "top bottom", // Start the animation as soon as the container is in view
         end: "bottom top", // End when the container leaves the viewport
         scrub: true, // Sync with scroll
+        ease: "none", // Ensures smooth movement without any easing
       },
     })
   }, [])
