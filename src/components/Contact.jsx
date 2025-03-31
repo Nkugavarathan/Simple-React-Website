@@ -11,7 +11,7 @@ export default function Contact() {
       <Navbar />
       <div className="container">
         <div className="row">
-          <h2 className="text-center text-primary">Contact Us</h2>
+          <h2 className="text-center text-primary mt-3">Contact Us</h2>
         </div>
         <div className="row mt-5">
           <div className="col-md-6">
