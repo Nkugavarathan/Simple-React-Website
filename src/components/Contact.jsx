@@ -1,6 +1,4 @@
 import React, { useState } from "react"
-import Navbar from "./Navbar"
-import Footer from "./Footer"
 import Button from "react-bootstrap/Button"
 import Form from "react-bootstrap/Form"
 import contactImage from "../../public/assets/images/contact.jpg" // Correct Import
@@ -45,7 +43,6 @@ export default function Contact() {
 
   return (
     <>
-      <Navbar />
       <div className="container contact-section">
         <div className="row">
           <h2 className="text-center text-primary mb-4">Contact Us</h2>
@@ -110,8 +107,6 @@ export default function Contact() {
           </motion.div>
         </div>
       </div>
-
-      <Footer />
     </>
   )
 }

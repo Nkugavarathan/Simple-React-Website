@@ -1,7 +1,6 @@
 import React, { useEffect } from "react"
 import data from "../data/index.json"
-import Navbar from "./Navbar"
-import Footer from "./Footer"
+
 import { gsap } from "gsap" // GSAP library for animations
 import ScrollTrigger from "gsap/ScrollTrigger" // ScrollTrigger plugin
 
@@ -50,7 +49,6 @@ export default function Order() {
 
   return (
     <>
-      <Navbar />
       <div
         className="container-fluid p-5"
         style={{
@@ -74,7 +72,6 @@ export default function Order() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   )
 }

@@ -4,8 +4,7 @@ import { FaPizzaSlice, FaStar, FaHeart, FaLeaf } from "react-icons/fa"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import Slider from "react-slick"
-import Navbar from "./Navbar"
-import Footer from "./Footer"
+
 import { useNavigate } from "react-router-dom"
 
 const About = () => {
@@ -41,8 +40,6 @@ const About = () => {
 
   return (
     <>
-      <Navbar />
-
       {/* Hero Section */}
       <motion.section
         className="hero-section text-center py-5 bg-light"
@@ -161,8 +158,6 @@ const About = () => {
           Order Now
         </button>
       </motion.section>
-
-      <Footer />
     </>
   )
 }

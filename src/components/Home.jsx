@@ -1,6 +1,4 @@
 import React from "react"
-import Navbar from "./Navbar"
-import Footer from "./Footer"
 import homeImage from "../../public/assets/images/home.jpg"
 import { useNavigate } from "react-router-dom"
 import Typewriter from "typewriter-effect"
@@ -11,7 +9,6 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
       <div
         className="container-fluid p-0 d-flex align-items-center justify-content-center"
         style={{
@@ -82,8 +79,6 @@ export default function Home() {
           </motion.div>
         </div>
       </div>
-
-      <Footer />
     </>
   )
 }
