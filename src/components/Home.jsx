@@ -3,6 +3,8 @@ import Navbar from "./Navbar"
 import Footer from "./Footer"
 import homeImage from "../../public/assets/images/home.jpg"
 import { useNavigate } from "react-router-dom"
+import Typewriter from "typewriter-effect"
+import { motion } from "framer-motion"
 export default function Home() {
   const navigate = useNavigate()
   return (
@@ -18,23 +20,42 @@ export default function Home() {
         <div className="row w-100 h-100 align-items-center p-4">
           {/* Text Section */}
           <div className="col-md-6 col-sm-12 text-center text-md-start">
-            <h2 className="display-4 fw-bold text-dark">
-              Welcome to Jiro Pizza
-            </h2>
+            <motion.h1
+              className="text-center fw-bold display-3"
+              style={{
+                background: "linear-gradient(to right, red, yellow)",
+                WebkitBackgroundClip: "text",
+                color: "transparent",
+              }}
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <Typewriter
+                options={{
+                  strings: ["Welcome to Jiro Pizza"],
+                  autoStart: true,
+                  loop: true,
+                  delay: 75,
+                }}
+              />
+            </motion.h1>
             <p className="lead text-muted">
               Indulge in the finest pizzas made with fresh ingredients, rich
               flavors, and a passion for perfection. Whether you're craving a
               classic Margherita or a loaded Meat Feast, we've got something to
               satisfy every taste.
             </p>
-            <button
-              className="btn btn-primary btn-lg mt-3"
-              onClick={() => {
-                navigate("/order")
-              }}
-            >
-              Order Now
-            </button>
+            <div className="d-flex justify-content-center">
+              <button
+                className="btn btn-primary btn-lg mt-3"
+                onClick={() => {
+                  navigate("/order")
+                }}
+              >
+                Order Now
+              </button>
+            </div>
           </div>
           {/* Image Section */}
           <div className="col-md-6 col-sm-12 mt-4 mt-md-0 ">
